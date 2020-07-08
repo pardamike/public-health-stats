@@ -45,8 +45,6 @@ export class StateGraphComponent implements OnInit {
         name: item[0].replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase()),
         value: item[1]
       });
-      console.log(item);
     });
-    console.log(this.graphData);
   }
 }

@@ -13,6 +13,7 @@ import { MatSelectChange } from '@angular/material/select';
 export class StateSelectComponent implements OnInit {
 
   states: State[] = [];
+  selected: string;
   year: string = environment.year;
 
   constructor(private stateDataService: StateDataService, private dataMessenger: DataMessengerService) { }
@@ -20,10 +21,12 @@ export class StateSelectComponent implements OnInit {
   ngOnInit(): void {
     this.stateDataService.getAllStates().subscribe((res) => {
       this.states = res;
+      this.selected = this.states[0].code;
+      this.updateState({ value: this.selected });
     });
   }
 
-  public updateState(event: MatSelectChange): void {
+  public updateState(event: MatSelectChange | { value: string }): void {
     this.stateDataService.getState(event.value).subscribe((res) => {
       this.dataMessenger.sendData(res);
     });

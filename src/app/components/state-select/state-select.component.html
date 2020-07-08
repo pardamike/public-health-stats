@@ -3,7 +3,7 @@
     <mat-card-content>
         <mat-form-field appearance="fill">
             <mat-label>State</mat-label>
-            <mat-select (selectionChange)="updateState($event)">
+            <mat-select (selectionChange)="updateState($event)" [(value)]="selected">
                 <mat-option *ngFor="let s of states" [value]="s.code">
                 {{s.name}}
                 </mat-option>
