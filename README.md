@@ -1,5 +1,5 @@
 # Public Health Stats
-Angular 10 demo using [Angular Material](https://material.angular.io/) and [ngx-charts](https://swimlane.gitbook.io/ngx-charts/) and [some free public health data](https://dashboard.healthit.gov/index.php)
+Angular 10 demo using [Angular Material](https://material.angular.io/), [ngx-charts](https://swimlane.gitbook.io/ngx-charts/), and [some free public health data](https://dashboard.healthit.gov/index.php)
 
 ## Live Demo
 
