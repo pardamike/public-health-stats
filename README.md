@@ -10,6 +10,8 @@ Angular 10 demo using [Angular Material](https://material.angular.io/) and [ngx-
 Requires: Angular CLI (generated with version 10.0.1)
 
 ```
+git clone https://github.com/pardamike/public-health-stats.git
+cd public-health-stats/
 npm install
 ng serve
 ```
