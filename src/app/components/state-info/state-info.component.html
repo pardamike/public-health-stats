@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-title>{{ data?.state.name || 'Not selected' }} Statistics</mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>
+            <b>At Least One Measure:</b><span>{{ data?.measurements.atLeastOne || 'N/A' }}</span>
+          </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>
+            <b>Immunization Measure:</b><span>{{ data?.measurements.immunization || 'N/A' }}</span>
+          </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>
+            <b>Reportable Results:</b><span>{{ data?.measurements.reportableLabResults || 'N/A' }}</span>
+          </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>
+            <b>Syndromic Measure:</b><span>{{ data?.measurements.syndromicSurveillance || 'N/A' }}</span>
+          </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>
+            <b>Registry Measure:</b><span>{{ data?.measurements.registry || 'N/A' }}</span>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+</mat-card>

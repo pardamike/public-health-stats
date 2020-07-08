@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>{{ data?.state.name || 'Not selected' }} Graph</mat-card-title>
+  <div class="graph-wrapper">
+    <ngx-charts-bar-vertical
+    [scheme]="colorScheme"
+    [results]="graphData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel">
+  </ngx-charts-bar-vertical>
+  </div>
+</mat-card>

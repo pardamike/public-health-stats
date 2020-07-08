@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>Year: {{ year }}</mat-card-title>
+    <mat-card-content>
+        <mat-form-field appearance="fill">
+            <mat-label>State</mat-label>
+            <mat-select (selectionChange)="updateState($event)">
+                <mat-option *ngFor="let s of states" [value]="s.code">
+                {{s.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-content>
+</mat-card>
