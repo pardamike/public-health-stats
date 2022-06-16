@@ -1,5 +1,5 @@
 # Public Health Stats
-Angular 10 demo using [Angular Material](https://material.angular.io/), [ngx-charts](https://swimlane.gitbook.io/ngx-charts/), and [some free public health data](https://dashboard.healthit.gov/index.php)
+Angular 11 demo using [Angular Material](https://material.angular.io/), [ngx-charts](https://swimlane.gitbook.io/ngx-charts/), and [some free public health data](https://dashboard.healthit.gov/index.php)
 
 ## Live Demo
 
@@ -7,7 +7,7 @@ Angular 10 demo using [Angular Material](https://material.angular.io/), [ngx-cha
 
 ## Installation
 
-Requires: Angular CLI (generated with version 10.0.1)
+Requires: Angular CLI
 
 ```
 git clone https://github.com/pardamike/public-health-stats.git
